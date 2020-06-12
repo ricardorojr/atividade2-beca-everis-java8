@@ -1,5 +1,8 @@
 package atividade2.core;
 
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,10 +12,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import atividade2.enums.ByValue;
 
-public class Element {
+public class Element  {
 	private WebDriver driver;
 	private String value;
 	private ByValue byvalue;
+	private Object m;
 
 	
 	
@@ -49,6 +53,7 @@ public class Element {
 	}
 
 	public void sendKeys(WebDriver driver, String string) {
+		criarElemento(driver).clear();
 		criarElemento(driver).sendKeys(string);
 	}
 
@@ -60,10 +65,6 @@ public class Element {
 	public String getValue() {
 		return this.value;
 	}
-	
-	public void clear() {
-		criarElemento(driver).isSelected();
-		criarElemento(driver).clear();
-	}
-	
+		
+		
 }
