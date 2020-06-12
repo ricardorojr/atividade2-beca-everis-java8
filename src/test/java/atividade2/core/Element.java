@@ -14,6 +14,8 @@ public class Element {
 	private String value;
 	private ByValue byvalue;
 
+	
+	
 	public Element(WebDriver driver, ByValue byvalue, String value) {
 		super();
 		this.driver = driver;
@@ -60,6 +62,7 @@ public class Element {
 	}
 	
 	public void clear() {
+		criarElemento(driver).isSelected();
 		criarElemento(driver).clear();
 	}
 	

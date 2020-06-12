@@ -32,7 +32,7 @@ public class FormularioMap {
 	public Element preencherRemember = new Element(driver, ByValue.ID, "rememberMe");
 	public Element btnPurchaseFlight = new Element(driver, ByValue.XPATH, "//input[@class='btn btn-primary']");
 	
-	//validar Mensagem
+	//validar Mensagem CT1
 	public Element mensagem1 = new Element(driver, ByValue.XPATH, "//th[text()='Departs: San Diego']");
 	public Element mensagem2 = new Element(driver, ByValue.XPATH, "//th[text()='Arrives: New York']");
 

@@ -16,14 +16,16 @@ public class FormularioPage {
 	}
 
 	FormularioMap formularioMap = new FormularioMap(driver);
-
+	
+	//formulario caso de teste 1 
 	public void preencherFormulario() {
 		formularioMap.select1.click(driver);
 		formularioMap.select2.click(driver);
 		formularioMap.btnFindFlight.click(driver);
 
 	}
-
+	
+	//formulario caso de teste 2
 	public void preencerFormularioCT2() {
 
 		formularioMap.btnChoseThisFlight.click(driver);

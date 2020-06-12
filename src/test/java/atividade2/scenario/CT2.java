@@ -13,7 +13,8 @@ public class CT2 {
 	WebDriver driver;
 	InicioPage inicioPage;
 	FormularioPage formularioPage;
-	
+		
+	//carrega a pagina
 	@Before
 	public void before() {
 		driver = new Driver().getDriver();
@@ -21,7 +22,8 @@ public class CT2 {
 		inicioPage = new InicioPage(driver);
 		formularioPage = new FormularioPage(driver);
 	}
-	
+		
+	//executa o teste
 	@Test
 	public void test() {
 		formularioPage.preencherFormulario();
@@ -34,6 +36,7 @@ public class CT2 {
 		}
 	}
 	
+	//finaliza a pagina
 	@After	
 	public void after() {
 		Driver.close(driver);
