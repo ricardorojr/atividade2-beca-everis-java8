@@ -8,12 +8,13 @@ import org.openqa.selenium.WebDriver;
 import atividade2.core.Driver;
 import atividade2.pages.FormularioPage;
 import atividade2.pages.InicioPage;
+import atividade2.pages.PageCT3;
 
 public class CT3 {
 
 	WebDriver driver;
 	InicioPage inicioPage;
-	FormularioPage formularioPage;
+	PageCT3 formulario3;
 
 	// carrega a pagina
 	@Before
@@ -21,14 +22,14 @@ public class CT3 {
 		driver = new Driver().getDriver();
 		Driver.acessoURL(driver, "https://blazedemo.com/");
 		inicioPage = new InicioPage(driver);
-		formularioPage = new FormularioPage(driver);
+		formulario3 = new PageCT3(driver);
 	}
 
 	// executa o teste
 	@Test
 	public void test() {
-		inicioPage.preencherVoo();
-		formularioPage.validarMensagem();
+		formulario3.preencherVoo();
+		formulario3.validarMensagem();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

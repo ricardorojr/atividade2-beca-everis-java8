@@ -23,37 +23,6 @@ public class InicioPage {
 		inicioMap.btnViewDemo("Neighborhood Events Questionnaire Form Demo").click(driver);
 	}
 
-	public void preencherVoo() {
-		inicioMap.selecionar1("Mexico City").click(driver);
-		
-		inicioMap.selecionar2("Berlin").click(driver);
-		
-		inicioMap.btnFindFlight("Find Flights").click(driver);
-		
-		inicioMap.btnChoseThisFlight("234").click(driver);
-		
-		inicioMap.preencherNome("Name").sendKeys(driver, "Ricardo");
-		
-		inicioMap.preencherAddress("Address").sendKeys(driver, "Travessa");
-		
-		inicioMap.preencherCity("City").sendKeys(driver, "Uberlândia");
-		
-		inicioMap.preencherState("State").sendKeys(driver, "Minas Gerais");
-		
-		inicioMap.preencherZipCode("Zip Code").sendKeys(driver, "38400000");
-		
-		inicioMap.selecionarCartao("Visa").click(driver);;
-		
-		inicioMap.preencheNUmeroCartao("Credit Card Number").sendKeys(driver, "1111111111111111");
-		
-		inicioMap.preencherMonth("Month").sendKeys(driver, "05");
-		
-		inicioMap.preencherMonth("Year").sendKeys(driver, "1987");
-		
-		inicioMap.nameOnCard("Name on Card").sendKeys(driver, "visa");
-		
-		inicioMap.btnPurchaseFlight("Purchase Flight").click(driver);
-		
-	}
+
 
 }

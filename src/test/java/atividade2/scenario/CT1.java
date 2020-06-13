@@ -12,7 +12,7 @@ import atividade2.pages.InicioPage;
 public class CT1 {
 	WebDriver driver;
 	InicioPage inicioPage;
-	FormularioPage formularioPage;
+	FormularioPage formulario;
 	
 	//carrega a pagina
 	@Before
@@ -20,15 +20,15 @@ public class CT1 {
 		driver = new Driver().getDriver();
 		Driver.acessoURL(driver, "https://blazedemo.com/");
 		inicioPage = new InicioPage(driver);
-		formularioPage = new FormularioPage(driver);
+		formulario = new FormularioPage(driver);
 	}
 	
 	
 	//executa o teste
 	@Test
 	public void test() {
-		formularioPage.preencherFormulario();
-		formularioPage.validarMensagemSucesso();
+		formulario.preencherFormulario();
+		formulario.validarMensagemSucesso();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
